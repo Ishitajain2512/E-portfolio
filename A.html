@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishita's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="portfolio.ico">
+    <link rel="stylesheet" href="B.css">
+    <script src="https://kit.fontawesome.com/d24c16a70b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="left"><p style="font-size: 50px;"><span>I</span>shita.</p></div>
+        <div class="right">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">References</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="ht">
+    <h1>Hi, I'm <span>Ishita Jain</span></h1>
+    <p>and I'm a passionate</p>
+    <span id="element"></span>
+</div>
+<div id="about">
+   <div class="container">
+        <div class="row">
+            <div class="rc1">
+                <img src="ishita.png">
+            </div>
+            <div class="rc2">
+                <h1 class="sb">About Me</h1>
+                <p>I am a recent graduate from KIET Group of Institutions with a Bachelor's degree in Computer Science and Information Technology. 
+                    I have a strong foundation in programming languages like C++, C, and Python, and expertise in data structures, algorithms, and database management.
+                    My passion for machine learning is reflected in two published research papers: “A Survey Analysis of COVID-19 Pandemic using Machine Learning” in Elsevier and 
+                    “Machine Learning for Forecast of Weather” in IEC Journal.
+                    <br><br>
+                    Beyond academics, I actively participate in coding competitions and hackathons, which have sharpened my problem-solving abilities. 
+                    I enjoy tackling complex challenges and am always eager to learn new technologies and skills. I aim to leverage my knowledge and creativity to 
+                    develop innovative solutions for real-world problems. Committed to making a positive impact through technology, I look forward to contributing 
+                    meaningfully to the tech industry while continuing my professional growth.<br><br>
+                </p>
+                <div class="smenu">
+                    <p class="sml act" onclick="opentab('skills')">Skills</p>
+                    <p class="sml" onclick="opentab('experience')">Experience</p>
+                    <p class="sml" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="smc acti" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML, CSS, Javascript</li>
+                        <li><span>Programming Languages</span><br>C, C++, Python</li>
+                        <li><span>Machine Learning</span><br>Pandas, Numpy, Matplotlib, Tensorflow</li>
+                        <li><span>Cloud Computing</span><br>Amazon Web Services (AWS)</li>
+                    </ul>
+                </div>
+                <div class="smc" id="experience">
+                    <ul>
+                        <li><span>July 2024 - Present</span><br>Associate Software Engineer at Accenture<br>Developed an understanding of 
+                            the basic principles of Cloud Computing, AI, ML and Gen-AI
+                        </li>
+                    </ul>
+                </div>
+                <div class="smc" id="education">
+                    <ul>
+                        <li><span>2020-2024</span><br>KIET Group of Institutions<br>
+                            Bachelor of Technology in Computer Science & 
+                            Information Technology<br>AKTU | India<br>
+                            Percentage : 81.38%
+                            </li>
+                        <li><span>2019-2020</span><br>Saai Memorial Girls School<br>
+                            Class XII, CBSE | Delhi, India <br>
+                            Percentage : 85.2%</li>
+                        <li><span>2017-2018</span><br>Saai Memorial Girls School<br>
+                            Class X, CBSE | Delhi, India <br>
+                            Percentage : 91.2%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="projects">
+    <h1 class="sb">My Projects</h1><br><br>
+    <div class="container">
+        <div class="pl1 g">
+            <div>
+                <div class="container">
+                    <div class=" pl1 m p1">
+                        <i class="fa-duotone fa-solid fa-person-walking"></i>
+                    </div>
+                    <div class="pl1 g p2">
+                        <div><h2>NutriFIT</h2><br></div>
+                        <p>Team Size : 4 <br>
+                            Tools Used : PyCharm <br>
+                            My Role : Built multiple stress burster using Python Libraries<br>
+                        </p>
+                        <a href="https://www.canva.com/design/DAF_dcXwQU4/AuyZzfapPaB56SmUGU2_Gg/edit?utm_content=DAF_dcXwQU4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pl1 g">
+            <div class="container">
+                <div class="pl1 p1 m">
+                    <i class="fa-solid fa-house-flood-water"></i>
+                </div>
+                <div class="pl1 p2 g">
+                    <div><h2>CreateGuard</h2><br></div>
+                    <p>Team Size : 6 <br>
+                        Tool Used : Google Colab Notebook <br>
+                        My Role : Visualized the current Flood scenario using Data visualization tools <br>
+                    </p>
+                    <a href="https://devpost.com/software/create-p9q32j?ref_content=user-portfolio&ref_feature=in_progress" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="publications">
+    <h1 class="sb">Publications</h1><br>
+    <div class="container">
+        <div class="publish">
+            <div class="pub">
+                <img src="covid.jpeg">
+                <div class="layer">
+                    <h1>A Survey Analysis of COVID-19 Pandemic using 
+                        Machine Learning</h1>
+                    <p>The paper was published in Elsevier Proceedings. This paper
+                        examined and compared a variety of algorithms, models, and methods 
+                        for predicting COVID-19 using Machine Learning techniques.
+                    </p>
+                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4159523"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="pub">
+                <img src="Weather.jpg">
+                <div class="layer">
+                    <h1>Machine Learning for Forecast of Weather</h1>
+                    <p>The paper was published  in IEC journal ISSN number 2456-2157. 
+                        This paper shows the comparison of different algorithms for predicting the 
+                        weather for a given data set.</p>
+                    <a href="https://drive.google.com/file/d/1KLRghIpvlBAS7M1zaGrKx-Ze7xQUmuus/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="cl">
+                <h1 class="sb">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jainishita2512@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9654835850</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/ishita-jain-609669205/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Ishitajain2512"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Ishita Jain Resume.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="cr">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Ishita. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Cloud Engineer', 'Data Analyst', 'Full Stack Developer'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop:true,
+    });
+  </script>
+
+<script>
+    var x = document.getElementsByClassName("sml");
+    var y = document.getElementsByClassName("smc");
+    function opentab(tn){
+        for(sm of x){
+            sm.classList.remove("act");
+        }
+        for(s of y){
+            s.classList.remove("acti");
+        }
+        event.currentTarget.classList.add("act");
+        document.getElementById(tn).classList.add("acti");
+    }
+</script>
+</body>
+</html>

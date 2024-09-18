@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black url("ishitaa.png") no-repeat bottom right fixed ;
+    background-position: calc(100% - 150px) calc(100% - 0px);
+    background-size: 32%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18,18,62);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    font-size: 23px;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.left span{
+    color: red;
+    display: inline;
+}
+.left p{
+    display: inline;
+    margin: 0;
+}
+.ht{
+    margin: 14% 20%;
+    font-size: 30px;
+}
+.ht h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.ht h1 span{
+    color: red;
+}
+.ht p{
+    font-size: 30px;
+}
+#element{
+    color: rgb(232, 21, 57);
+    text-decoration: solid;
+    font-size: 50px;
+    font-weight: bold;
+}
+.ht h4{
+    font-size: 30px;
+}
+#about{
+    padding: 10px 0;
+    color: #ababab;
+    background-color: black;
+    margin-bottom: -80px;
+    margin-top: 10%;
+}
+#about .container{
+    margin-top: 1%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.rc1{
+    flex-grow: 1;
+    flex-basis: 80%;
+    padding: 20px;
+}
+.rc1 img{
+    height: 90%;
+    border-radius: 15px;
+    position: calc(100% - 150px) calc(100% - 150px);
+}
+.rc2{
+    flex-grow: 3;
+    padding: 20px;
+}
+.sb{
+   font-size: 60px;
+   font-weight: 600;
+   color: #fff; 
+}
+.rc2 p{
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.smenu{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.sml{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.sml::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#ff145e;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.sml.act::after{
+    width: 50%;
+}
+.smc ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+.smc ul li span{
+    color: #b54769;
+    font-size: 22px;
+}
+.smc{
+    display: none;
+}
+.smc.acti{
+    display: block;
+}
+#projects{
+    padding: 20px 0;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.pl1{
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.pl1,.g{
+    margin-right: 50px;
+}
+.p1{
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p2{
+    flex: 0 0 60%;
+    max-width: 100%; 
+    overflow: hidden;
+    padding: 10px;
+}
+.p2 p{
+    max-width: 100%; 
+    word-wrap: break-word; 
+    margin: 0;
+    line-height: 30px;
+}
+.p2 a{
+    line-height: 30px;
+    color: white;
+}
+.ma:hover,.g:hover {
+    background-color: #ff004f;
+    color: white; 
+}
+i{
+    font-size: 70px;
+}
+.p2 div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#publications{
+    padding: 20px 0;
+    background-color: black;
+    margin-left: 20px;
+}
+.publish{
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.pub{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.pub img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.layer i{
+    font-size: large;
+}
+.pub:hover img{
+    transform: scale(0.97);
+}
+.pub:hover .layer{
+    height: 100%;
+}
+#contact{
+    background-color: black;
+}
+.btn{
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+.cl{
+    flex-basis: 35%;
+}
+.cr{
+    flex-basis: 60%;
+}
+.cl p{
+    margin-top: 30px;
+}
+.cl p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social{
+    margin-bottom: 30px;
+}
+.social a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: tranform 0.5s;
+}
+.social a i{
+    margin-top: 30px;
+    font-size: 40px;
+}
+.social a:hover{
+    color: #ff004f;
+    transform: translate(-5px);
+}
+.cr form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: black;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+    font-size: 20px;
+}
