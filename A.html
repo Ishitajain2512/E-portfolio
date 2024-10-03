@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="portfolio.ico">
     <link rel="stylesheet" href="B.css">
     <script src="https://kit.fontawesome.com/d24c16a70b.js" crossorigin="anonymous"></script>
+    <script src="C.js"></script>
 </head>
 <body>
 <header>
@@ -18,8 +19,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#">Certifications</a></li>
-                <li><a href="#">References</a></li>
+                <li><a href="#contact">References</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </div>
@@ -29,6 +29,13 @@
     <h1>Hi, I'm <span>Ishita Jain</span></h1>
     <p>and I'm a passionate</p>
     <span id="element"></span>
+    <div class="social">
+    <a href="mailto:jainishita2512@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+    <a href="#"><i class="fa-solid fa-phone"></i></a>
+    <a href="https://www.linkedin.com/in/ishita-jain-609669205/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Ishitajain2512"><i class="fa-brands fa-github"></i></a>
+    <a href="Ishita Jain Resume.pdf" download><i class="fa-regular fa-file"></i></a>
+    </div>
 </div>
 <div id="about">
    <div class="container">
@@ -49,9 +56,9 @@
                     meaningfully to the tech industry while continuing my professional growth.<br><br>
                 </p>
                 <div class="smenu">
-                    <p class="sml act" onclick="opentab('skills')">Skills</p>
-                    <p class="sml" onclick="opentab('experience')">Experience</p>
-                    <p class="sml" onclick="opentab('education')">Education</p>
+                    <p class="sml act" onclick="opentab(event,'skills')">Skills</p>
+                    <p class="sml" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="sml" onclick="opentab(event, 'education')">Education</p>
                 </div>
                 <div class="smc acti" id="skills">
                     <ul>
@@ -63,23 +70,22 @@
                 </div>
                 <div class="smc" id="experience">
                     <ul>
-                        <li><span>July 2024 - Present</span><br>Associate Software Engineer at Accenture<br>Developed an understanding of 
+                        <li><span>Associate Software Engineer at Accenture</span><br>July 2024 - September 2024<br>Developed an understanding of 
                             the basic principles of Cloud Computing, AI, ML and Gen-AI
                         </li>
                     </ul>
                 </div>
                 <div class="smc" id="education">
                     <ul>
-                        <li><span>2020-2024</span><br>KIET Group of Institutions<br>
-                            Bachelor of Technology in Computer Science & 
-                            Information Technology<br>AKTU | India<br>
+                        <li><span>Bachelor of Technology in Computer Science and Information Technology</span><br>KIET Group of Institutions<br>
+                            2020-2024<br>AKTU | India<br>
                             Percentage : 81.38%
                             </li>
-                        <li><span>2019-2020</span><br>Saai Memorial Girls School<br>
-                            Class XII, CBSE | Delhi, India <br>
+                        <li><span>Class XII</span><br>Saai Memorial Girls School<br>
+                            2019-2020<br>CBSE | Delhi, India <br>
                             Percentage : 85.2%</li>
-                        <li><span>2017-2018</span><br>Saai Memorial Girls School<br>
-                            Class X, CBSE | Delhi, India <br>
+                        <li><span>Class X</span><br>Saai Memorial Girls School<br>
+                            2017-2018<br>CBSE | Delhi, India <br>
                             Percentage : 91.2%</li>
                     </ul>
                 </div>
@@ -88,8 +94,23 @@
     </div>
 </div>
 <div id="projects">
-    <h1 class="sb">My Projects</h1><br><br>
-    <div class="container">
+    <h1 class="sb sb1">My Projects</h1><br><br>
+    <div class="container container1">
+        <div class="pl1 g">
+            <div class="container">
+                <div class="pl1 p1 m">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="pl1 p2 g">
+                    <div><h2>E-Portfolio</h2><br></div>
+                    <p>Team Size : 1 <br>
+                        Tools Used : VS Code <br>
+                        My Role : Built a personal website that showcases different projects and skills<br>
+                    </p>
+                    <a href="https://github.com/Ishitajain2512/E-portfolio" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
         <div class="pl1 g">
             <div>
                 <div class="container">
@@ -122,58 +143,82 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div id="publications">
-    <h1 class="sb">Publications</h1><br>
-    <div class="container">
-        <div class="publish">
-            <div class="pub">
-                <img src="covid.jpeg">
-                <div class="layer">
-                    <h1>A Survey Analysis of COVID-19 Pandemic using 
-                        Machine Learning</h1>
-                    <p>The paper was published in Elsevier Proceedings. This paper
-                        examined and compared a variety of algorithms, models, and methods 
-                        for predicting COVID-19 using Machine Learning techniques.
-                    </p>
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4159523"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <div class="pl1 g">
+            <div class="container">
+                <div class="pl1 p1 m">
+                    <i class="fa-solid fa-child-reaching"></i>
                 </div>
-            </div>
-            <div class="pub">
-                <img src="Weather.jpg">
-                <div class="layer">
-                    <h1>Machine Learning for Forecast of Weather</h1>
-                    <p>The paper was published  in IEC journal ISSN number 2456-2157. 
-                        This paper shows the comparison of different algorithms for predicting the 
-                        weather for a given data set.</p>
-                    <a href="https://drive.google.com/file/d/1KLRghIpvlBAS7M1zaGrKx-Ze7xQUmuus/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="pl1 p2 g">
+                    <div><h2>Amigos</h2><br></div>
+                    <p>Team Size : 5 <br>
+                        Tool Used : Jupyter Notebook <br>
+                        My Role : Built a machine learning model using Jupyter Notebook <br>
+                    </p>
+                    <a href="#" target="_blank">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="cl">
-                <h1 class="sb">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>jainishita2512@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>+91 9654835850</p>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/ishita-jain-609669205/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Ishitajain2512"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="Ishita Jain Resume.pdf" download class="btn">Download CV</a>
+<div id="publications">
+    <h1 class="sb sb1 sb2">Publications</h1>
+    <div class="publish">
+        <div class="pub">
+            <img src="covid.jpeg">   
+            <div class="layer">
+                <h1>A Survey Analysis of COVID-19 Pandemic using 
+                    Machine Learning</h1>
+                <p>The paper was published in Elsevier Proceedings. This paper
+                    examined and compared a variety of algorithms, models, and methods 
+                    for predicting COVID-19 using Machine Learning techniques.
+                </p>
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4159523"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div> 
+        </div>
+        <div class="pub">
+            <img src="Weather.jpg">
+            <div class="layer">
+                <h1>Machine Learning for Forecast of Weather</h1>
+                <p>The paper was published  in IEC journal ISSN number 2456-2157. 
+                    This paper shows the comparison of different algorithms for predicting the 
+                    weather for a given data set.</p>
+                <a href="https://drive.google.com/file/d/1KLRghIpvlBAS7M1zaGrKx-Ze7xQUmuus/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
+        </div>
+        <div class="pub">
+            <img src="Yoga.jpg">
+            <div class="layer">
+                <h1>Ethical Decision Making in Yoga Posture Detection through AI: Fostering Responsible 
+                    Technology Integration</h1>
+                <p>The book chapter is being published in the book “Ethical Decision-Making using Artificial Intelligence: Challenges, 
+                    Solutions and Applications" by Scrivener Publishing Wiley Group. 
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <h1 class="sb">Contact Me <span style="margin-left: 30%;">References</span></h1>
+    <div class="container2">
+        <div class="row">
             <div class="cr">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" autocomplete="on" required>
+                    <input type="email" name="Email" placeholder="Your Email" autocomplete="on" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
+        </div>
+        <div class="row">
+            <ul>
+                <a href="https://www.codechef.com/users/ishitajain2512" class="btn">CodeChef</a><br>
+                <a href="https://leetcode.com/u/jainishita2512/" class="btn">LeetCode</a><br>
+                <a href="https://www.geeksforgeeks.org/user/jainishita2512/" class="btn">GeeksforGeeks</a><br>
+                <a href="https://www.hackerrank.com/profile/jainishita2512" class="btn">Hackerrank</a>
+            </ul>
         </div>
     </div>
     <div class="copyright">
@@ -188,21 +233,23 @@
       backSpeed: 25,
       loop:true,
     });
-  </script>
-
-<script>
-    var x = document.getElementsByClassName("sml");
-    var y = document.getElementsByClassName("smc");
-    function opentab(tn){
-        for(sm of x){
-            sm.classList.remove("act");
-        }
-        for(s of y){
-            s.classList.remove("acti");
-        }
-        event.currentTarget.classList.add("act");
-        document.getElementById(tn).classList.add("acti");
-    }
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMgCaF6MSliVS976HvOy8_dIMZOq7H3j90YRNXxqenbzOxhAq3p_qMUuc07YwK1YZq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Form Submitted Successfully"
+            setTimeout(function(){
+                msg,innerHTML = ""
+            },5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>

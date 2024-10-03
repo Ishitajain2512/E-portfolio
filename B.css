@@ -112,6 +112,14 @@ nav ul li a:hover::after{
    font-weight: 600;
    color: #fff; 
 }
+.sb1{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+.sb2{
+    padding: 60px 0;
+}
 .rc2 p{
     font-family: "Sevillana", cursive;
     font-weight: 400;
@@ -160,7 +168,7 @@ nav ul li a:hover::after{
     display: block;
 }
 #projects{
-    padding: 20px 0;
+    padding: 60px 0;
     background-color: black;
     margin-left: 20px;
     margin-right: 20px;
@@ -170,6 +178,10 @@ nav ul li a:hover::after{
     max-width: 100%;
     width: 100%;
     overflow-x: hidden;
+}
+.container1{
+    justify-content: center;
+    align-items: center;
 }
 .pl1{
     padding: 10px;
@@ -213,29 +225,36 @@ i{
     margin-bottom: 15px;
 }
 #publications{
-    padding: 20px 0;
+    padding: 30px 0;
     background-color: black;
     margin-left: 20px;
 }
 .publish{
     display: grid;
-    grid-template-columns: repeat(2, 60%);
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.pub{
+    height: 500px;
+    width: 1500px;
+    grid-template-rows: 500px;
+    grid-template-columns: 500px 500px 500px;
+    place-items: center;
+    margin-left: 10%;
+    column-gap: 60px;
+ }
+ .pub{
+    height: 500px;
+    width: 500px;
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
-}
-.pub img{
-    width: 100%;
+    position: relative;
+ }
+ .pub img{
+    width: 500px;
+    height: 500px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
-}
-.layer{
-    width: 100%;
+ }
+ .layer{
+    width: 500px;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
@@ -247,7 +266,7 @@ i{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
@@ -255,6 +274,10 @@ i{
 .layer h1{
     font-weight: bold;
     margin-bottom: 20px;
+    color: #fff;
+}
+.layer p{
+    color: #fff;
 }
 .layer a{
     margin-top: 20px;
@@ -275,10 +298,20 @@ i{
     transform: scale(0.97);
 }
 .pub:hover .layer{
-    height: 100%;
+    height: 500px;
 }
 #contact{
     background-color: black;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+#contact .sb{
+    margin: 30px 100px;
+}
+.container2{
+    display: flex;
+    margin: 20px -80px;
 }
 .btn{
     display: inline-block;
@@ -294,19 +327,8 @@ i{
 .btn:hover{
     background: #ff004f;
 }
-.cl{
-    flex-basis: 35%;
-}
 .cr{
     flex-basis: 60%;
-}
-.cl p{
-    margin-top: 30px;
-}
-.cl p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
 }
 .social{
     margin-bottom: 30px;
@@ -329,6 +351,8 @@ i{
 }
 .cr form{
     width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
 }
 form input, form textarea{
     width: 100%;
@@ -349,6 +373,11 @@ form .btn{
     cursor: pointer;
     background-color: black;
 }
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
 .copyright{
     width: 100%;
     text-align: center;
@@ -360,4 +389,17 @@ form .btn{
 .copyright i{
     color: #ff004f;
     font-size: 20px;
+}
+.row ul{
+    color: white;
+    font-size: 30px;
+}
+.row ul a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    margin: 10px 140px;
+}
+textarea{
+    resize: none;
 }
